@@ -9,7 +9,7 @@ let srcPath = path.join(__dirname, SRC_DIR);
 let destPath = path.join(__dirname, DEST_DIR);
 let bundlePath = path.join(__dirname, DEST_DIR, DEST_FILE);
 
-(async function main() {
+(async function createCssBundle() {
     await createDestDir(destPath);
     await createDestFile(bundlePath);
     let bundleContent = await fs.readFile(bundlePath);
